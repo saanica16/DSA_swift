@@ -45,4 +45,4 @@ func sortZeroOne2ndApproach(arr: inout [Int]) {
 
 var testArray = [1,0,1,0,0,0,0]
 sortZeroOne2ndApproach(arr: &testArray)
-print(testArray) // [0, 0, 0, 0, 0, 1, 1, 1]
+print(testArray) // [0, 0, 0, 0, 0, 1, 1]
