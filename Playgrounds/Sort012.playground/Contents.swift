@@ -12,17 +12,17 @@ func sortColors(_ nums: inout [Int]) {
     var high = nums.count - 1
     
     while mid <= high {
-        if nums[mid] == 0 && low <= high {
+        if nums[mid] == 0 && mid <= high {
             let temp = nums[low]
             nums[low] = nums[mid]
             nums[mid] = temp
             
             low += 1
             mid += 1
-        } else if nums[mid] == 1 && low <= high {
+        } else if nums[mid] == 1 && mid <= high {
             mid += 1
         } else {
-            if low <= high {
+            if mid <= high {
                 let temp = nums[mid]
                 nums[mid] = nums[high]
                 nums[high] = temp
@@ -36,4 +36,4 @@ func sortColors(_ nums: inout [Int]) {
 //output
 var testArray = [2,0,2,1,1,0,0]
 sortColors(&testArray)
-print(testArray)
+print(testArray)  //[0, 0, 0, 1, 1, 2, 2]
