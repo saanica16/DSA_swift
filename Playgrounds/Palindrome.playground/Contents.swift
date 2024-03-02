@@ -1,5 +1,3 @@
-import UIKit
-
 // valid palindrome
 //https://leetcode.com/problems/valid-palindrome/description/
 
